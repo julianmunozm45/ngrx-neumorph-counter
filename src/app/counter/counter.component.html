@@ -1,0 +1,10 @@
+<div class="counter">
+	<div class="counter-actions">
+		<a (click)="increment()" class="neu-btn m-half">Increment</a>
+		<a (click)="decrement()" class="neu-btn m-half">Decrement</a>
+	</div>
+
+	<span class="neu-label m-half d-block">Current Count</span>
+	<span class="neu-text-box m-half d-block">{{ count$ | async }}</span>
+	<a (click)="reset()" class="neu-btn primary m-half d-block">Reset Counter</a>
+</div>
